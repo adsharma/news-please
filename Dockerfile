@@ -7,5 +7,4 @@ RUN cd /news-please && pip3 install -r requirements.txt
 COPY docker.sh /
 RUN chmod +x /docker.sh
 
-#CMD ["/docker.sh"]
-CMD ["/bin/sh"]
+CMD ["/docker.sh"]
