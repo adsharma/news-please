@@ -14,12 +14,12 @@ import pymysql
 from elasticsearch import Elasticsearch
 from scrapy.utils.log import configure_logging
 
-from newsplease.pipeline.pipelines import RedisStorageClient
-
 cur_path = os.path.dirname(os.path.realpath(__file__))
 par_path = os.path.dirname(cur_path)
 sys.path.append(cur_path)
 sys.path.append(par_path)
+
+from newsplease.pipeline.pipelines import RedisStorageClient
 from newsplease.helper_classes.savepath_parser import SavepathParser
 from newsplease.config import JsonConfig
 from newsplease.config import CrawlerConfig
